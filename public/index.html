@@ -1127,7 +1127,7 @@ async function openDetail(i, scrollToSharh){
   }
   if (h.takhrij) tkH = `<div class="sec-title">تخريج</div><div class="info-box">${h.takhrij}</div>`;
   const cats = (h.categories||[]).map(c => `<span class="cat">${c.name}</span>`).join('');
-  const hE = (h.hadith||'').replace(/'/g,"\\'").replace(/\n/g,' ').substring(0,200);
+  const hE = (h.hadith||'').replace(/'/g,"\\'").replace(/\n/g,' ');
   const rE = (h.rawi  ||'').replace(/'/g,"\\'");
   const mE = (h.mohdith||'').replace(/'/g,"\\'");
   const gE = (h.grade ||'').replace(/'/g,"\\'");
